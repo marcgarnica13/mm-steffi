@@ -175,6 +175,7 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  justify-content: space-between;
   min-height: $nav-height;
   background: $background-color;
 
@@ -193,6 +194,8 @@
     &.site-logo {
       margin-inline-start: 0;
       margin-inline-end: 0.5rem;
+      position: absolute;
+      left: 50%
     }
 
     &.site-title {
@@ -219,12 +222,9 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
-    -webkit-box-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
     overflow: hidden;
 
     li {
