@@ -175,9 +175,8 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   min-height: $nav-height;
-  background: $background-color;
 
   a {
     display: block;
@@ -193,9 +192,10 @@
 
     &.site-logo {
       margin-inline-start: 0;
-      margin-inline-end: 0.5rem;
-      position: absolute;
-      left: 50%
+      margin-inline-end: 0;
+      width: 33%;
+      align-items: center;
+      text-align: center;
     }
 
     &.site-title {
@@ -206,6 +206,7 @@
   img {
     -webkit-transition: none;
     transition: none;
+    align-self: center;
   }
 
   &__toggle {
@@ -218,6 +219,13 @@
     cursor: pointer;
   }
 
+  .nav-dir-btn {
+    display: flex;
+    width: 33%;
+    justify-content: flex-end;
+  }
+  
+
   .visible-links {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -226,6 +234,7 @@
     -ms-flex-pack: start;
     justify-content: flex-start;
     overflow: hidden;
+    width: 33%;
 
     li {
       -webkit-box-flex: 0;
@@ -235,6 +244,7 @@
 
     a {
       position: relative;
+      font-size: $type-size-6;
 
       &:before {
         content: "";
